@@ -6,8 +6,7 @@ import { ArrowRight } from '@mui/icons-material'
 export default function Home() {
   return (
     <>
-      <Typography variant="h4">ClassDiagram</Typography>
-      <Box sx={{ padding: 1, minHeight: '80vh' }}>
+      <Box sx={{ padding: 1, minHeight: '88vh' }}>
         <div
           style={{
             padding: 150,

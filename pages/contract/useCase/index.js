@@ -22,7 +22,6 @@ const ContractUseCase = () => {
 
   const [abis, setAbis] = useState([])
   const [rows, setRows] = useState([])
-  const [comments, setComments] = useState([])
 
   useEffect(() => {
     init()

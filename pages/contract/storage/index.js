@@ -48,7 +48,7 @@ const StorageDiagram = () => {
             src="/storageDiagram.svg"
             alt="storageDiagram"
             width="2400"
-            height="800"
+            height="700"
           />
         </Box>
       </Box>

@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 983)">
 <title>UmlClassDiagram</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-983 1668.01,-983 1668.01,4 -4,4"/>
-<!-- 21 -->
+<!-- 77 -->
 <g id="node1" class="node">
-<title>21</title>
+<title>77</title>
 <polygon fill="#f2f2f2" stroke="black" points="0,-760.9 0,-978.5 438.62,-978.5 438.62,-760.9 0,-760.9"/>
 <text text-anchor="middle" x="219.31" y="-961.9" font-family="Times,serif" font-size="14.00">&lt;&lt;Interface&gt;&gt;</text>
 <text text-anchor="middle" x="219.31" y="-945.1" font-family="Times,serif" font-size="14.00">IERC20</text>
@@ -27,9 +27,9 @@
 <text text-anchor="start" x="8" y="-785.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; Transfer(from: address, to: address, value: uint256)</text>
 <text text-anchor="start" x="8" y="-769.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; Approval(owner: address, spender: address, value: uint256)</text>
 </g>
-<!-- 22 -->
+<!-- 78 -->
 <g id="node2" class="node">
-<title>22</title>
+<title>78</title>
 <polygon fill="#f2f2f2" stroke="black" points="456.23,-819.7 456.23,-919.7 674.39,-919.7 674.39,-819.7 456.23,-819.7"/>
 <text text-anchor="middle" x="565.31" y="-903.1" font-family="Times,serif" font-size="14.00">&lt;&lt;Abstract&gt;&gt;</text>
 <text text-anchor="middle" x="565.31" y="-886.3" font-family="Times,serif" font-size="14.00">Context</text>
@@ -38,9 +38,9 @@
 <text text-anchor="start" x="464.23" y="-844.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;_msgSender(): (payable: address)</text>
 <text text-anchor="start" x="464.23" y="-827.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;_msgData(): bytes</text>
 </g>
-<!-- 23 -->
+<!-- 79 -->
 <g id="node3" class="node">
-<title>23</title>
+<title>79</title>
 <polygon fill="#f2f2f2" stroke="black" points="347.75,-229.5 347.75,-723.9 782.87,-723.9 782.87,-229.5 347.75,-229.5"/>
 <text text-anchor="middle" x="565.31" y="-707.3" font-family="Times,serif" font-size="14.00">ERC20</text>
 <polyline fill="none" stroke="black" points="347.75,-699.1 782.87,-699.1 "/>
@@ -73,21 +73,21 @@
 <text text-anchor="start" x="355.75" y="-254.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;increaseAllowance(spender: address, addedValue: uint256): bool</text>
 <text text-anchor="start" x="355.75" y="-237.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;decreaseAllowance(spender: address, subtractedValue: uint256): bool</text>
 </g>
-<!-- 23&#45;&gt;21 -->
+<!-- 79&#45;&gt;77 -->
 <g id="edge2" class="edge">
-<title>23&#45;&gt;21</title>
+<title>79&#45;&gt;77</title>
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M347.66,-723.66C343.35,-728.52 339.09,-733.34 334.88,-738.1"/>
 <polygon fill="none" stroke="black" points="326.98,-731.18 314.97,-760.6 342.71,-745.09 326.98,-731.18"/>
 </g>
-<!-- 23&#45;&gt;22 -->
+<!-- 79&#45;&gt;78 -->
 <g id="edge1" class="edge">
-<title>23&#45;&gt;22</title>
+<title>79&#45;&gt;78</title>
 <path fill="none" stroke="black" d="M565.31,-723.94C565.31,-747.27 565.31,-769.56 565.31,-789.36"/>
 <polygon fill="none" stroke="black" points="554.81,-789.6 565.31,-819.6 575.81,-789.6 554.81,-789.6"/>
 </g>
-<!-- 26 -->
+<!-- 82 -->
 <g id="node6" class="node">
-<title>26</title>
+<title>82</title>
 <polygon fill="#f2f2f2" stroke="black" points="692.08,-769.3 692.08,-970.1 1288.54,-970.1 1288.54,-769.3 692.08,-769.3"/>
 <text text-anchor="middle" x="990.31" y="-953.5" font-family="Times,serif" font-size="14.00">&lt;&lt;Library&gt;&gt;</text>
 <text text-anchor="middle" x="990.31" y="-936.7" font-family="Times,serif" font-size="14.00">Address</text>
@@ -102,15 +102,15 @@
 <text text-anchor="start" x="700.08" y="-794.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;functionCallWithValue(target: address, data: bytes, value: uint256): bytes</text>
 <text text-anchor="start" x="700.08" y="-777.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;functionCallWithValue(target: address, data: bytes, value: uint256, errorMessage: string): bytes</text>
 </g>
-<!-- 23&#45;&gt;26 -->
+<!-- 79&#45;&gt;82 -->
 <g id="edge4" class="edge">
-<title>23&#45;&gt;26</title>
+<title>79&#45;&gt;82</title>
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M783.18,-717.07C785.89,-719.54 788.6,-721.98 791.31,-724.4 805.95,-737.46 821.75,-750.48 837.83,-763.06"/>
 <polygon fill="black" stroke="black" points="835.69,-765.83 845.74,-769.2 839.98,-760.3 835.69,-765.83"/>
 </g>
-<!-- 27 -->
+<!-- 83 -->
 <g id="node7" class="node">
-<title>27</title>
+<title>83</title>
 <polygon fill="#f2f2f2" stroke="black" points="1306.61,-769.3 1306.61,-970.1 1664.01,-970.1 1664.01,-769.3 1306.61,-769.3"/>
 <text text-anchor="middle" x="1485.31" y="-953.5" font-family="Times,serif" font-size="14.00">&lt;&lt;Library&gt;&gt;</text>
 <text text-anchor="middle" x="1485.31" y="-936.7" font-family="Times,serif" font-size="14.00">SafeMath</text>
@@ -125,15 +125,15 @@
 <text text-anchor="start" x="1314.61" y="-794.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;mod(a: uint256, b: uint256): uint256</text>
 <text text-anchor="start" x="1314.61" y="-777.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;mod(a: uint256, b: uint256, errorMessage: string): uint256</text>
 </g>
-<!-- 23&#45;&gt;27 -->
+<!-- 79&#45;&gt;83 -->
 <g id="edge3" class="edge">
-<title>23&#45;&gt;27</title>
+<title>79&#45;&gt;83</title>
 <path fill="none" stroke="black" stroke-dasharray="5,2" d="M783.12,-720.27C785.84,-721.7 788.56,-723.07 791.31,-724.4 892.81,-773.44 1189.51,-727.43 1297.31,-760.4 1302.54,-762 1307.79,-763.77 1313.03,-765.68"/>
 <polygon fill="black" stroke="black" points="1311.86,-768.98 1322.45,-769.27 1314.35,-762.44 1311.86,-768.98"/>
 </g>
-<!-- 24 -->
+<!-- 80 -->
 <g id="node4" class="node">
-<title>24</title>
+<title>80</title>
 <polygon fill="#f2f2f2" stroke="black" points="800.51,-414.3 800.51,-539.1 986.11,-539.1 986.11,-414.3 800.51,-414.3"/>
 <text text-anchor="middle" x="893.31" y="-522.5" font-family="Times,serif" font-size="14.00">owned</text>
 <polyline fill="none" stroke="black" points="800.51,-514.3 986.11,-514.3 "/>
@@ -144,9 +144,9 @@
 <text text-anchor="start" x="808.51" y="-439.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; onlyOwner()</text>
 <text text-anchor="start" x="808.51" y="-422.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;constructor()</text>
 </g>
-<!-- 25 -->
+<!-- 81 -->
 <g id="node5" class="node">
-<title>25</title>
+<title>81</title>
 <polygon fill="#f2f2f2" stroke="black" points="617.1,-0.5 617.1,-192.5 841.52,-192.5 841.52,-0.5 617.1,-0.5"/>
 <text text-anchor="middle" x="729.31" y="-175.9" font-family="Times,serif" font-size="14.00">JPYC</text>
 <polyline fill="none" stroke="black" points="617.1,-167.7 841.52,-167.7 "/>
@@ -161,15 +161,15 @@
 <text text-anchor="start" x="625.1" y="-25.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;constructor()</text>
 <text text-anchor="start" x="625.1" y="-8.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;mint(to: address, amount: uint256)</text>
 </g>
-<!-- 25&#45;&gt;23 -->
+<!-- 81&#45;&gt;79 -->
 <g id="edge5" class="edge">
-<title>25&#45;&gt;23</title>
+<title>81&#45;&gt;79</title>
 <path fill="none" stroke="black" d="M687.92,-192.94C686.67,-195.84 685.39,-198.77 684.1,-201.75"/>
 <polygon fill="none" stroke="black" points="674.43,-197.66 672.13,-229.36 693.7,-206.01 674.43,-197.66"/>
 </g>
-<!-- 25&#45;&gt;24 -->
+<!-- 81&#45;&gt;80 -->
 <g id="edge6" class="edge">
-<title>25&#45;&gt;24</title>
+<title>81&#45;&gt;80</title>
 <path fill="none" stroke="black" d="M775.73,-192.72C781.42,-204.88 787.07,-217.2 792.31,-229 815.23,-280.64 839.25,-339.12 858.12,-386.18"/>
 <polygon fill="none" stroke="black" points="848.42,-390.22 869.28,-414.2 867.93,-382.44 848.42,-390.22"/>
 </g>
