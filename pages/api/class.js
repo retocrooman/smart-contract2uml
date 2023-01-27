@@ -7,17 +7,16 @@ const fs = require('fs')
 export default async function handler(req, res) {
   const fileFolderAddress = req.body.address
   try {
-    // let { umlClasses } = await (0, parserGeneral.parserUmlClasses)(
-    //   fileFolderAddress,
-    //   '-k 1VGCERK377QSHA5EU1X3IHVV42NM6PJJAR',
-    // )
-    // const dotString = (0, converterClasses2Dot.convertUmlClasses2Dot)(
-    //   umlClasses,
-    // )
-    // const svg = await writerFiles.convertDot2Svg(dotString)
-    // fs.writeFileSync('./public/classDiagram.svg', svg)
-    // res.status(200).json({ svg: svg })
-    res.status(200).json({ key: "value"})
+    let { umlClasses } = await (0, parserGeneral.parserUmlClasses)(
+      fileFolderAddress,
+      '-k 1VGCERK377QSHA5EU1X3IHVV42NM6PJJAR',
+    )
+    const dotString = (0, converterClasses2Dot.convertUmlClasses2Dot)(
+      umlClasses,
+    )
+    const svg = await writerFiles.convertDot2Svg(dotString)
+    fs.writeFileSync('./public/classDiagram.svg', svg)
+    res.status(200).json({ svg: svg })
   } catch (err) {
     console.log(err)
     res.status(500).json({ error: err })
