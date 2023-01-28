@@ -47,7 +47,7 @@ const StorageDiagram = () => {
       <Box style={{ padding: 20 }}>
         <Typography variant="h4">StorageDiagram</Typography>
         <Button onClick={onClick}>reload</Button>
-        <Box style={{ padding: 1, overflow: 'auto' }}>
+        <Box width="2400px" height="700px" style={{ padding: 1, overflow: 'auto' }}>
           <div dangerouslySetInnerHTML={{ __html: svg }} />
           {/* <Image
             src="/storageDiagram.svg"
