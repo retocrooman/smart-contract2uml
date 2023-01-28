@@ -25,10 +25,9 @@ export default async function handler(req, res) {
       storage,
     )
     const dotString = converterStorage2Dot.convertStorages2Dot(storages, '-d')
-    console.log(storages)
     const svg = await writerFiles.convertDot2Svg(dotString)
-    fs.writeFileSync('./public/storageDiagram.svg', svg)
-    res.status(200).json({ svg: svg })
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.status(200).send(svg);
   } catch (err) {
     console.log(err)
     res.status(500).json({ error: err })

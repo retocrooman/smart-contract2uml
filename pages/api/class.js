@@ -2,7 +2,6 @@
 const parserGeneral = require('sol2uml/lib/parserGeneral.js')
 const converterClasses2Dot = require('sol2uml/lib/converterClasses2Dot.js')
 const writerFiles = require('sol2uml/lib/writerFiles.js')
-const fs = require('fs')
 
 export default async function handler(req, res) {
   const fileFolderAddress = req.body.address
@@ -15,8 +14,8 @@ export default async function handler(req, res) {
       umlClasses,
     )
     const svg = await writerFiles.convertDot2Svg(dotString)
-    fs.writeFileSync('./public/classDiagram.svg', svg)
-    res.status(200).json({ svg: svg })
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.status(200).send(svg);
   } catch (err) {
     console.log(err)
     res.status(500).json({ error: err })
