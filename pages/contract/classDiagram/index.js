@@ -47,8 +47,11 @@ const ContractClassDiagram = () => {
       <Box style={{ padding: 20 }}>
         <Typography variant="h4">ClassDiagram</Typography>
         <Button onClick={onClick}>reload</Button>
-        <Box  width="2400px" height="700px" style={{ padding: 1, overflow: 'auto' }}>
-          <div dangerouslySetInnerHTML={{ __html: svg }} />
+        <Box  width="100%" height="700px" style={{ padding: 1, overflow: 'scroll' }}>
+          <div
+            dangerouslySetInnerHTML={{ __html: svg }}
+            style={{transform: 'scale(0.5)', transformOrigin: 'top left'}}
+          />
         </Box>
       </Box>
     </>
